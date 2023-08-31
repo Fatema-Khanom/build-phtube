@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="m-20">
+        <div>
+            <h1 class="font-bold">Question:Discuss the scope of var, let, and const.</h1>
+            <p>The scope of variables in JavaScript is determined by their declaration keywords:</p>
+        
+            <h2 class="font-semibold">var Scope:</h2>
+            <p>The <code>var</code> keyword introduces variables with either function scope or global scope. Variables declared with <code>var</code> are subject to hoisting, where declarations are moved to the top of their enclosing function or global context. This can lead to unexpected behavior as <code>var</code> variables can be accessed before they are formally declared within the same scope.</p>
+        
+            <h2 class="font-semibold">let Scope:</h2>
+            <p>The <code>let</code> keyword introduces block-scoped variables. These variables are confined to the nearest enclosing block, whether it's a loop, a conditional statement, or a function. Unlike <code>var</code>, <code>let</code> variables are not hoisted to the top of their block. They are only accessible after their declaration within the block, promoting clearer scoping and preventing scope-related issues.</p>
+        
+            <h2 class="font-semibold">const Scope:</h2>
+            <p>The <code>const</code> keyword introduces block-scoped variables with the additional characteristic of being constants. This means their value cannot be reassigned after their initial assignment. Similar to <code>let</code>, <code>const</code> variables are block-scoped and are only accessible after their declaration within the block. They ensure controlled scoping and are particularly useful when maintaining constant values throughout their scope.</p>
+        
+            <p>In modern JavaScript development, using <code>let</code> and <code>const</code> is recommended over <code>var</code> due to their more precise scoping and alignment with contemporary programming practices.</p>
+        </div>
+    </div>
+</body>
+</html>
